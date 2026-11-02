@@ -1,5 +1,5 @@
 
-function Navbar() {
+function Navbar({ onLoginClick }) {
   return (
     <nav className="navbar">
 
@@ -16,7 +16,12 @@ function Navbar() {
       </div>
 
       <div className="nav-actions">
-        <button className="login-btn">Login</button>
+        <button
+  className="login-btn"
+  onClick={onLoginClick}
+>
+  Login
+</button>
 
         <button className="get-started-btn">
           Get Started →
